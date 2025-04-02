@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons & Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Navbar Example</title>
+
+    <style>
+        /* Scrollable table container on small screens */
+        .table-responsive {
+            overflow-x: scroll;
+            max-height: 550px;
+            /* Adjust height as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Customer Shop Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="B2B.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_add_products.html"><i class="bi bi-cart fw-bold"></i> Add
+                            Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_view_products.html"><i class="bi bi-receipt"></i> View
+                            products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_manage_orders.html"><i class="bi bi-receipt"></i><strong>
+                                Manage Orders</strong> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_profile.html"><i class="bi bi-person-circle"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="/index.html" class="nav-link active"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        From this page Business can manage the Orders
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <main>
+        <div class="container text-center p-3">
+            <h4><i class="bi bi-receipt"></i> Manage Orders</h4>
+        </div>
+
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Order ID:</th>
+                            <th scope="col">Order Date</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Bill To</th>
+                            <th scope="col">Ship To</th>
+                            <th scope="col">Invoice Date:</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Bill</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">OD330664469</th>
+                            <td>07-03-2024</td>
+                            <td>Product Name</td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>Ishwar Munnolii
+                                #75/9, 57th cross, 4th block,
+                                Rajajinagar Bangalore - 560010,
+                                Bangalore.
+                                Bengaluru 560010 Karnataka
+                                Phone: xxxxxxxxxx 
+                                </td>
+                            <td>07-03-2024</td>
+                            <td>Customer ordered -> paking pending -> shipping pending -> delivery pending </td>
+                            <td>
+                                <a href="B2B_Bill.html" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="#" class="text-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container" style="padding: 10px;">
+            <a class="btn btn-danger" href="B2B.html">Back</a>
+            <a class="btn btn-success" href="">1</a>
+            <a class="btn btn-success" href="">2</a>
+            <a class="btn btn-success" href="">3</a>
+            <a class="btn btn-warning" href="">Next Page</a>
+        </div>
+    </main>
+
+    
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

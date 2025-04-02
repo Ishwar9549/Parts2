@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .invoice-container {
+            max-width: 800px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        .invoice-header, .invoice-details {
+            margin-bottom: 20px;
+        }
+        .table th, .table td {
+            text-align: left;
+        }
+        .grand-total {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+        <a class="btn btn-danger" href="B2B_manage_orders.html">Back</a>
+    </nav>
+
+<div class="invoice-container">
+    <div class="invoice-header row">
+        <div class="col-md-6">
+            <strong>Sold By:</strong> Global Healthfit Retail India LLP<br>
+            <strong>Ship-from Address:</strong> Marasandra and Madnahatti - Venkatapura Villages, Kasaba Hobli, Malur Taluk, Dist - Kolar, Malur, Bangalore, Karnataka, India - 563130, IN-KA<br>
+            <strong>GSTIN:</strong> 29AA0FG1339G2Z7
+        </div>
+        <div class="col-md-6 text-md-end">
+            <strong>Invoice Number:</strong> # FANBC02400027816
+        </div>
+    </div>
+
+    <div class="invoice-details row">
+        <div class="col-md-4">
+            <strong>Order ID:</strong> OD330664469297157100<br>
+            <strong>Order Date:</strong> 07-03-2024<br>
+            <strong>Invoice Date:</strong> 07-03-2024<br>
+            <strong>PAN:</strong> AAOFG1339G
+        </div>
+        <div class="col-md-4">
+            <strong>Bill To:</strong><br>
+            Ishwar Munnolii<br>
+            #75/9, 57th cross, 4th block, Rajajinagar Bangalore - 560010, Bangalore.<br>
+            Bengaluru 560010 Karnataka<br>
+            <strong>Phone:</strong> xxxxXXXXXX
+        </div>
+        <div class="col-md-4">
+            <strong>Ship To:</strong><br>
+            Ishwar Munnolii<br>
+            #75/9, 57th cross, 4th block, Rajajinagar Bangalore - 560010, Bangalore.<br>
+            Bengaluru 560010 Karnataka<br>
+            <strong>Phone:</strong> xxxxXXXXXX<br>
+            *Keep this invoice and manufacturer box for warranty purposes.
+        </div>
+    </div>
+
+    <p><strong>Total items:</strong> 1</p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Title</th>
+                <th>Qty</th>
+                <th>Gross Amount ₹</th>
+                <th>Discount ₹</th>
+                <th>Taxable Value ₹</th>
+                <th>CGST ₹</th>
+                <th>SGST/UTGST ₹</th>
+                <th>Total ₹</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Edible Seeds FSN: EDSGGZ77G99NXQEV HSN/SAC: 12071010</td>
+                <td>Neuherbs Raw & Unroasted Organic Chia Seeds | Source Of Omega-3 | 150g (Pack of 1) Chia Seeds CGST: 2.5% SGST/UTGST: 2.5%</td>
+                <td>2</td>
+                <td>218.00</td>
+                <td>0.00</td>
+                <td>207.60</td>
+                <td>5.20</td>
+                <td>5.20</td>
+                <td>218.00</td>
+            </tr>
+            <tr>
+                <td>Shipping And Handling Charges</td>
+                <td></td>
+                <td>2</td>
+                <td>70.00</td>
+                <td>-70.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total</strong></td>
+                <td>288.00</td>
+                <td>-70.00</td>
+                <td>207.60</td>
+                <td>5.20</td>
+                <td>5.20</td>
+                <td>218.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="grand-total">
+        <strong>Grand Total:</strong> ₹ 218.00
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

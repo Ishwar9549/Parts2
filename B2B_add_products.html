@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>Navbar Example</title>
+</head>
+<style>
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-preview {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border: 1px dashed #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .image-preview img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .add-image-button {
+        cursor: pointer;
+    }
+
+    .remove-image {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 2px 5px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Customer Shop Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li>
+                        <a class="btn btn-danger" href="B2B.html">Back</a>
+                    </li> -->
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="B2B.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="B2B_add_products.html"><i
+                                class="bi bi-cart fw-bold"></i> <strong>Add Products</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_view_products.html"><i class="bi bi-receipt"></i> View
+                            products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_manage_orders.html"><i class="bi bi-receipt"></i> Manage Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B2B_profile.html"><i class="bi bi-person-circle"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="/index.html" class="nav-link active"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                    </li>
+             
+                </ul>
+                <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        From this page Business can add the products 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+
+    <main>
+        <div class="container " style="text-align: center; padding: 10px;">
+            <h4> <i class="bi bi-cart fw-bold"></i> Add Products</h4>
+        </div>
+        <div class="container " style="text-align: center; padding: 10px;">
+            <p>Option One</p>
+            <div class="alert alert-danger" role="alert">
+                According to the provided Excel sheet but I am confused here.
+            </div>
+        </div>
+        <div class="container" style="border: 1px solid black; ">
+            <div class="container m-2">
+                <div class="form-group">
+                    <label for="make">Car Make:</label>
+                    <select class="form-control" id="make">
+                        <option value="">Select Make</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Kia">Kia</option>
+                        <option value="M and M">M and M</option>
+                        <option value="Maruti">Maruti</option>
+                        <option value="MG">MG</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Tata">Tata</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Universal">Universal</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Car Model:</label>
+                    <select class="form-control" id="model">
+                        <option value="">Select Model</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="segment">Car Segment:</label>
+                    <select class="form-control" id="segment">
+                        <option value="">Select Segment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select class="form-control" id="category">
+                        <option value="">Select Category</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="accessory">Accessory:</label>
+                    <select class="form-control" id="accessory">
+                        <option value="">Select Accessory</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container " style="text-align: center; padding: 10px;">
+            <p>Option two</p>
+            <div class="alert alert-danger" role="alert">
+                I am confused here which product is in which category.
+            </div>
+
+            <div class="container p-2" style="border: 1px solid black;">
+                <div class="container d-flex">
+                    <select class="form-control m-2" id="make">
+                        <option value=""> Category 1</option>
+                        <option value="Honda">One</option>
+                        <option value="Hyundai">Two</option>
+                    </select>
+                    <select class="form-control m-2" id="make">
+                        <option value=""> Category 2</option>
+                        <option value="Honda">One</option>
+                        <option value="Hyundai">Two</option>
+                    </select>
+                    <select class="form-control m-2" id="make">
+                        <option value=""> Category 3</option>
+                        <option value="Honda">One</option>
+                        <option value="Hyundai">Two</option>
+                    </select>
+                </div>
+                <div class="container" style="text-align: start !important;">
+                    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="container" style="text-align: start !important;">
+                    <label for="exampleInputEmail1" class="form-label">Product Description </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="container d-flex" style="text-align: start !important; gap: 5px;">
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label">Original Price </label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label">Discounted Price </label>
+                        <input type="number" class="form-control">
+                    </div>
+                </div>
+                <div class="container" style="text-align: start !important;">
+                    <label for="exampleInputEmail1" class="form-label">Add Images(upto 5) </label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="container" style="text-align: start !important;">
+                    <div class="mt-4" style="color: red; text-align: start;">
+                        We can take input as many as we want
+                    </div>
+                    <a href="B2B_view_products.html"><button class="btn btn-success mt-4">Add Product</button></a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <script>
+        const car = {
+            "Honda": {
+                "Amaze": {
+                    "Super Compact": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Premium Seat Covers Napp", "Standard Seat Covers PU", "Sun Shade"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+                "City": {
+                    "Mid-size": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Standard Seat Covers PU"],
+                        "Exterior": ["Body", "Side Moulding", "Door Sill Guard", "Door Visor plain", "Rear Guard "]
+                    }
+                },
+                "Jazz": {
+                    "Compact-Small Car": {
+                        "Interior": ["7D Matting ", "Full Floor Matting ", "Standard Seat Covers PU "],
+                        "Exterior": ["Car Cover silver matty ", "Rear Guard "]
+                    }
+                }
+            },
+            "Hyundai": {
+                "Alcazar": {
+                    "SUV > 4M": {
+                        "Interior": ["7D Matting", "Standard Seat Covers PU"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+                "Creta": {
+                    "Super Compact": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Premium Seat Covers Napp", "Standard Seat Covers PU", "Sun Shade"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+                "Exter": {
+                    "Super Compact": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Premium Seat Covers Napp", "Standard Seat Covers PU", "Sun Shade"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+                "i10": {
+                    "Super Compact": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Premium Seat Covers Napp", "Standard Seat Covers PU", "Sun Shade"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+                "i20": {
+                    "Super Compact": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Premium Seat Covers Napp", "Standard Seat Covers PU", "Sun Shade"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+                "Venue": {
+                    "Super Compact": {
+                        "Interior": ["7D Matting", "Full Floor Matting", "Premium Seat Covers Napp", "Standard Seat Covers PU", "Sun Shade"],
+                        "Exterior": ["Door Visor plain", "Rear Guard"]
+                    }
+                },
+            },
+            "Kia": ["Carens", "Seltos", "Sonet"],
+            "M and M": ["Scorpio", "Scorpio N ", "Thar", "XUV300 ", "XUV700"],
+            "Maruti": ["Alto", "Boleno", "Brezza", "Celerio", "Dzire", "Eeco", "Ertica", "Grand Vitara", "Jimny", "S-Presso ", "Swift", "Wagon R"],
+            "MG": ["Astor / Gloster", "Hector"],
+            "Nissan": ["Magnite"],
+            "Renault": ["Kiger", "KWID", "Triber"],
+            "Tata": ["Altroz", "Harrier", "Nexon", "Punch", "Safari", "Tiago", "Tigor"],
+            "Toyota": ["Cruiser", "Crysta", "Fortuner", "Glanza"],
+            "Universal": ["ANTI WEATHER FILM", "BADGES", "Boot Organiser", "BUMPER PROTECTOR", "CAR CARE", "CHARER-CABLES", "DOOR EDGE GUARDS", "ELECTRONIC ACCESSORIES ", "GRASS MAT", "HEALTH ORTHO MEMORY", "Idol", "ITTER PERFUME", "LIFE STYLE PRODUCTS", "MICROFIBER", "PADDED SEAT COVER", "PERFUME ", "POLYFILL", "PREMIUM FOOT MAT", "PRIMER", "PU FINGER GUARD", "REFLECTOR STICKER", "SHARK FIN ", "SIDE VENT ", "Utility"]
+        };
+
+        const makeSelect = document.getElementById('make');
+        const modelSelect = document.getElementById('model');
+        const segmentSelect = document.getElementById('segment');
+        const categorySelect = document.getElementById('category');
+        const accessorySelect = document.getElementById('accessory');
+
+        makeSelect.addEventListener('change', () => {
+            modelSelect.innerHTML = '<option value="">Select Model</option>';
+            segmentSelect.innerHTML = '<option value="">Select Segment</option>';
+            categorySelect.innerHTML = '<option value="">Select Category</option>';
+            accessorySelect.innerHTML = '<option value="">Select Accessory</option>';
+
+            const selectedMake = makeSelect.value;
+            if (selectedMake && car[selectedMake]) {
+                if (typeof car[selectedMake] === 'object' && !Array.isArray(car[selectedMake])) {
+                    Object.keys(car[selectedMake]).forEach(model => {
+                        modelSelect.innerHTML += `<option value="${model}">${model}</option>`;
+                    });
+                } else {
+                    car[selectedMake].forEach(model => {
+                        modelSelect.innerHTML += `<option value="${model}">${model}</option>`;
+                    });
+                }
+            }
+        });
+
+        modelSelect.addEventListener('change', () => {
+            segmentSelect.innerHTML = '<option value="">Select Segment</option>';
+            categorySelect.innerHTML = '<option value="">Select Category</option>';
+            accessorySelect.innerHTML = '<option value="">Select Accessory</option>';
+
+            const selectedMake = makeSelect.value;
+            const selectedModel = modelSelect.value;
+            if (selectedMake && selectedModel && car[selectedMake] && typeof car[selectedMake] === 'object' && !Array.isArray(car[selectedMake]) && car[selectedMake][selectedModel]) {
+                Object.keys(car[selectedMake][selectedModel]).forEach(segment => {
+                    segmentSelect.innerHTML += `<option value="${segment}">${segment}</option>`;
+                });
+            }
+        });
+
+        segmentSelect.addEventListener('change', () => {
+            categorySelect.innerHTML = '<option value="">Select Category</option>';
+            accessorySelect.innerHTML = '<option value="">Select Accessory</option>';
+
+            const selectedMake = makeSelect.value;
+            const selectedModel = modelSelect.value;
+            const selectedSegment = segmentSelect.value;
+            if (selectedMake && selectedModel && selectedSegment && car[selectedMake] && typeof car[selectedMake] === 'object' && !Array.isArray(car[selectedMake]) && car[selectedMake][selectedModel] && car[selectedMake][selectedModel][selectedSegment]) {
+                Object.keys(car[selectedMake][selectedModel][selectedSegment]).forEach(category => {
+                    categorySelect.innerHTML += `<option value="${category}">${category}</option>`;
+                });
+            }
+            if (selectedMake === "Universal") {
+                categorySelect.innerHTML += `<option value="Utility">Utility</option>`;
+            }
+        });
+
+        categorySelect.addEventListener('change', () => {
+            accessorySelect.innerHTML = '<option value="">Select Accessory</option>';
+
+            const selectedMake = makeSelect.value;
+            const selectedModel = modelSelect.value;
+            const selectedSegment = segmentSelect.value;
+            const selectedCategory = categorySelect.value;
+
+            if (selectedMake && selectedModel && selectedSegment && selectedCategory && car[selectedMake] && typeof car[selectedMake] === 'object' && !Array.isArray(car[selectedMake]) && car[selectedMake][selectedModel] && car[selectedMake][selectedModel][selectedSegment] && car[selectedMake][selectedModel][selectedSegment][selectedCategory]) {
+                const accessories = car[selectedMake][selectedModel][selectedSegment][selectedCategory];
+                if (Array.isArray(accessories)) {
+                    accessories.forEach(accessory => {
+                        accessorySelect.innerHTML += `<option value="${accessory}">${accessory}</option>`;
+                    });
+                }
+            }
+            if (selectedMake === "Universal" && selectedCategory === "Utility") {
+                const accessories = car[selectedMake];
+                if (Array.isArray(accessories)) {
+                    accessories.forEach(accessory => {
+                        accessorySelect.innerHTML += `<option value="${accessory}">${accessory}</option>`;
+                    });
+                }
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
